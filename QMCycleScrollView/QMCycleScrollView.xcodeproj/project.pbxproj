@@ -12,6 +12,9 @@
 		9B80AF131D903788001E3486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B80AF111D903788001E3486 /* Main.storyboard */; };
 		9B80AF151D903788001E3486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B80AF141D903788001E3486 /* Assets.xcassets */; };
 		9B80AF181D903788001E3486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B80AF161D903788001E3486 /* LaunchScreen.storyboard */; };
+		9B80AF421D915632001E3486 /* QMCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B80AF411D915632001E3486 /* QMCycleScrollView.swift */; };
+		9B80AF451D9189DD001E3486 /* QMCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B80AF431D9189DD001E3486 /* QMCollectionViewCell.swift */; };
+		9B80AF461D9189DD001E3486 /* QMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80AF441D9189DD001E3486 /* QMCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		9B80AF141D903788001E3486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B80AF171D903788001E3486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B80AF191D903788001E3486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B80AF411D915632001E3486 /* QMCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QMCycleScrollView.swift; sourceTree = "<group>"; };
+		9B80AF431D9189DD001E3486 /* QMCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QMCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B80AF441D9189DD001E3486 /* QMCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QMCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		9B80AF0C1D903788001E3486 /* QMCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				9B80AF401D9155E1001E3486 /* QMCycleScrollView */,
 				9B80AF0D1D903788001E3486 /* AppDelegate.swift */,
 				9B80AF0F1D903788001E3486 /* ViewController.swift */,
 				9B80AF111D903788001E3486 /* Main.storyboard */,
@@ -62,6 +69,17 @@
 				9B80AF191D903788001E3486 /* Info.plist */,
 			);
 			path = QMCycleScrollView;
+			sourceTree = "<group>";
+		};
+		9B80AF401D9155E1001E3486 /* QMCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9B80AF411D915632001E3486 /* QMCycleScrollView.swift */,
+				9B80AF431D9189DD001E3486 /* QMCollectionViewCell.swift */,
+				9B80AF441D9189DD001E3486 /* QMCollectionViewCell.xib */,
+			);
+			name = QMCycleScrollView;
+			path = Lib/QMCycleScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +142,7 @@
 			files = (
 				9B80AF181D903788001E3486 /* LaunchScreen.storyboard in Resources */,
 				9B80AF151D903788001E3486 /* Assets.xcassets in Resources */,
+				9B80AF461D9189DD001E3486 /* QMCollectionViewCell.xib in Resources */,
 				9B80AF131D903788001E3486 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +156,8 @@
 			files = (
 				9B80AF101D903788001E3486 /* ViewController.swift in Sources */,
 				9B80AF0E1D903788001E3486 /* AppDelegate.swift in Sources */,
+				9B80AF451D9189DD001E3486 /* QMCollectionViewCell.swift in Sources */,
+				9B80AF421D915632001E3486 /* QMCycleScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +309,7 @@
 				9B80AF1E1D903788001E3486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
