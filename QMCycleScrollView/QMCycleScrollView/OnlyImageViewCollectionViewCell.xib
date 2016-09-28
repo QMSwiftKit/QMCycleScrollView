@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnlyImageViewCollectionViewCell" customModule="QMCycleScrollView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="48"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lor-ng-fzl">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="48"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1o-n9-yuB">
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="48"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.90436422409999995" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="B09-6E-ZMK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoi-hn-9df">
+                        <rect key="frame" x="124" y="0.0" width="20" height="48"/>
+                        <color key="backgroundColor" red="0.68596463529999996" green="1" blue="0.51586159789999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="4Ad-J2-yTu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="b1o-n9-yuB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5Fq-cQ-Dip"/>
+                <constraint firstAttribute="bottom" secondItem="eoi-hn-9df" secondAttribute="bottom" id="LVB-j5-oHA"/>
+                <constraint firstAttribute="bottom" secondItem="b1o-n9-yuB" secondAttribute="bottom" id="OdR-NC-EYM"/>
+                <constraint firstItem="eoi-hn-9df" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QVu-rl-xRx"/>
+                <constraint firstAttribute="trailing" secondItem="lor-ng-fzl" secondAttribute="trailing" id="eZW-zb-EsN"/>
+                <constraint firstItem="b1o-n9-yuB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l3A-gu-Da2"/>
+                <constraint firstItem="lor-ng-fzl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rHx-7h-PY8"/>
+                <constraint firstAttribute="trailing" secondItem="eoi-hn-9df" secondAttribute="trailing" id="sSn-ZO-uym"/>
+                <constraint firstItem="lor-ng-fzl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tcX-lT-J6A"/>
+                <constraint firstAttribute="bottom" secondItem="lor-ng-fzl" secondAttribute="bottom" id="vsW-BQ-7an"/>
+            </constraints>
+            <size key="customSize" width="144" height="48"/>
+            <connections>
+                <outlet property="imageView" destination="lor-ng-fzl" id="nKh-pi-Pv5"/>
+                <outlet property="vLeft" destination="b1o-n9-yuB" id="7aF-Ll-kqk"/>
+                <outlet property="vRight" destination="eoi-hn-9df" id="aQK-i4-25c"/>
+            </connections>
+            <point key="canvasLocation" x="271" y="317"/>
+        </collectionViewCell>
+    </objects>
+</document>

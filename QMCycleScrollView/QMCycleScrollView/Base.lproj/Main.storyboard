@@ -1,25 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QMCycleScrollView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Une-XT-vsr" customClass="QMCycleScrollView" customModule="QMCycleScrollView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="130" width="414" height="100"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.90436422409999995" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BjW-3R-4LT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4E-DR-UN4">
+                                <rect key="frame" x="0.0" y="636" width="414" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-pQ-s3B">
+                                        <rect key="frame" x="394" y="0.0" width="20" height="100"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.90436422409999995" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Qmq-PP-acH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.68596463529999996" green="1" blue="0.51586159789999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XYF-pQ-s3B" secondAttribute="trailing" id="7c0-nf-gtL"/>
+                                    <constraint firstItem="XYF-pQ-s3B" firstAttribute="top" secondItem="W4E-DR-UN4" secondAttribute="top" id="o0w-Nm-NQY"/>
+                                    <constraint firstAttribute="height" constant="100" id="oVf-3W-4Yw"/>
+                                    <constraint firstAttribute="bottom" secondItem="XYF-pQ-s3B" secondAttribute="bottom" id="st5-JN-CNz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMh-S7-E14" customClass="QMCycleScrollView" customModule="QMCycleScrollView" customModuleProvider="target">
+                                <rect key="frame" x="5" y="250" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RMh-S7-E14" secondAttribute="height" multiplier="2" id="JBT-aR-Ptm"/>
+                                    <constraint firstAttribute="width" constant="100" id="mfR-oN-Kyp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-WY-498" customClass="QMCycleScrollView" customModule="QMCycleScrollView" customModuleProvider="target">
+                                <rect key="frame" x="110" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.90436422409999995" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="h8H-Kw-E9l"/>
+                                    <constraint firstAttribute="height" constant="100" id="pWY-wo-YHj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2QC-Pf-3bf" customClass="QMCycleScrollView" customModule="QMCycleScrollView" customModuleProvider="target">
+                                <rect key="frame" x="215" y="250" width="100" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2QC-Pf-3bf" secondAttribute="height" multiplier="1:3" id="TIH-ud-6pR"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zxc-Bo-XUj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aFz-WY-498" firstAttribute="leading" secondItem="RMh-S7-E14" secondAttribute="trailing" constant="5" id="18l-Pw-cqm"/>
+                            <constraint firstItem="RMh-S7-E14" firstAttribute="top" secondItem="Une-XT-vsr" secondAttribute="bottom" constant="20" id="5mL-ge-NbJ"/>
+                            <constraint firstItem="aFz-WY-498" firstAttribute="top" secondItem="Une-XT-vsr" secondAttribute="bottom" constant="20" id="7xy-Wg-uDr"/>
+                            <constraint firstAttribute="trailing" secondItem="Une-XT-vsr" secondAttribute="trailing" id="DCX-G8-tpv"/>
+                            <constraint firstItem="W4E-DR-UN4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FyB-Re-qaL"/>
+                            <constraint firstAttribute="trailing" secondItem="W4E-DR-UN4" secondAttribute="trailing" id="JJP-Jb-9DB"/>
+                            <constraint firstItem="Une-XT-vsr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="Q7l-Gl-dgk"/>
+                            <constraint firstItem="2QC-Pf-3bf" firstAttribute="leading" secondItem="aFz-WY-498" secondAttribute="trailing" constant="5" id="Sdv-t6-dsf"/>
+                            <constraint firstItem="2QC-Pf-3bf" firstAttribute="top" secondItem="Une-XT-vsr" secondAttribute="bottom" constant="20" id="n6Q-Gh-gGB"/>
+                            <constraint firstItem="RMh-S7-E14" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="pDb-Q0-7KM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W4E-DR-UN4" secondAttribute="bottom" id="szA-0j-lqY"/>
+                            <constraint firstItem="Une-XT-vsr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ttf-Kb-4Ww"/>
+                            <constraint firstItem="Une-XT-vsr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uoK-qK-LYt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ttf-Kb-4Ww"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="csv" destination="Une-XT-vsr" id="4J7-yY-nDs"/>
+                        <outlet property="csvCenter" destination="aFz-WY-498" id="SKb-9p-jw1"/>
+                        <outlet property="csvLeft" destination="RMh-S7-E14" id="S9z-rc-fQl"/>
+                        <outlet property="csvRight" destination="2QC-Pf-3bf" id="ANd-WC-QHU"/>
+                        <outlet property="vBottom" destination="W4E-DR-UN4" id="2Sd-0u-x7Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="275" y="181"/>
         </scene>
     </scenes>
 </document>

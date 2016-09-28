@@ -15,6 +15,8 @@
 		9B80AF421D915632001E3486 /* QMCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B80AF411D915632001E3486 /* QMCycleScrollView.swift */; };
 		9B80AF451D9189DD001E3486 /* QMCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B80AF431D9189DD001E3486 /* QMCollectionViewCell.swift */; };
 		9B80AF461D9189DD001E3486 /* QMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80AF441D9189DD001E3486 /* QMCollectionViewCell.xib */; };
+		9BDEBC401D94E05100EFE3C3 /* OnlyImageViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDEBC3E1D94E05100EFE3C3 /* OnlyImageViewCollectionViewCell.swift */; };
+		9BDEBC411D94E05200EFE3C3 /* OnlyImageViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BDEBC3F1D94E05100EFE3C3 /* OnlyImageViewCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9B80AF411D915632001E3486 /* QMCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QMCycleScrollView.swift; sourceTree = "<group>"; };
 		9B80AF431D9189DD001E3486 /* QMCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QMCollectionViewCell.swift; sourceTree = "<group>"; };
 		9B80AF441D9189DD001E3486 /* QMCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QMCollectionViewCell.xib; sourceTree = "<group>"; };
+		9BDEBC3E1D94E05100EFE3C3 /* OnlyImageViewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyImageViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BDEBC3F1D94E05100EFE3C3 /* OnlyImageViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnlyImageViewCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				9B80AF141D903788001E3486 /* Assets.xcassets */,
 				9B80AF161D903788001E3486 /* LaunchScreen.storyboard */,
 				9B80AF191D903788001E3486 /* Info.plist */,
+				9BDEBC3E1D94E05100EFE3C3 /* OnlyImageViewCollectionViewCell.swift */,
+				9BDEBC3F1D94E05100EFE3C3 /* OnlyImageViewCollectionViewCell.xib */,
 			);
 			path = QMCycleScrollView;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 				9B80AF151D903788001E3486 /* Assets.xcassets in Resources */,
 				9B80AF461D9189DD001E3486 /* QMCollectionViewCell.xib in Resources */,
 				9B80AF131D903788001E3486 /* Main.storyboard in Resources */,
+				9BDEBC411D94E05200EFE3C3 /* OnlyImageViewCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +163,7 @@
 			files = (
 				9B80AF101D903788001E3486 /* ViewController.swift in Sources */,
 				9B80AF0E1D903788001E3486 /* AppDelegate.swift in Sources */,
+				9BDEBC401D94E05100EFE3C3 /* OnlyImageViewCollectionViewCell.swift in Sources */,
 				9B80AF451D9189DD001E3486 /* QMCollectionViewCell.swift in Sources */,
 				9B80AF421D915632001E3486 /* QMCycleScrollView.swift in Sources */,
 			);
